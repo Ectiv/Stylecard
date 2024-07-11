@@ -1,0 +1,53 @@
+<!--DOCTYPE html-->
+<html lang="en">
+  <head><link rel="stylesheet" href="styles.css"></head>
+  <body>
+    <h1 id="title">BBQ Cookout</h1>
+    <p id="description"> Thanks for taking the time to take this survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Please enter your name: <input id="name" type="text" placeholder="Enter your name" required class="" /></label>
+        <label for="email" id="email-label">Please enter your email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="number" id="number-label">How many people are you bringing?<input id="number" type="number" min="0" max="5" placeholder="People" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like?</legend>
+        <label for="dropdown">
+          <select id="dropdown">
+            <option value=""> (select one)
+            <option value="1"> Hotdogs
+            <option value="2"> Burgers
+            <option value="3"> Steaks
+            <option value="4"> Chips
+            <option value="5"> Brisket
+          </select>
+        </label>
+      <legend>Are you alergic to any food items?</legend>
+       <label for="allergy">
+         <input id="allergy" type="radio" name="allergy" value="yes"> Yes</input><br>
+         <input id="allergy" type="radio" name="allergy" value="no" checked>No</input>
+      <legend>If yes, what are you allergic to?</legend>
+      <textarea></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>What drinks would you like?</legend>
+          <label for="bev"><input class="inline" id="bev" type="radio" name="drinks" value="alcohol" checked>Alcohol</input></br>
+          <input class="inline" id="bev" type="radio" name="drinks" value="soda" >Soda</input></br>
+          <input class="inline" id="bev" type="radio" name="drinks" value="juice">Juice</input>
+        </label>
+      </fieldset>
+        <legend> What are you going to bring? </legend>
+          <input id="bring" type="checkbox" value="cups">Cups</input><br>
+          <input id="bring" type="checkbox" value="games">Games</input><br>
+          <input id="bring" type="checkbox" value="plates">Plates</input><br>
+          <input id="bring" type="checkbox" value="food">Food</input><br>
+          <input id="bring" type="checkbox" value="yourself">Yourself</input>
+        </label>
+    
+      <fieldset>
+        <legend>If you are bringing food, what food are you bringing?</legend>
+          <textarea id="food" row="4" cols="30"></textarea>
+        </label>
+      </fieldset>
+        <button id="submit" value="Submit" type="submit">Submit</button>
+    </form>
